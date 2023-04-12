@@ -10,29 +10,33 @@
     <script src="lib/script.js"></script>
 </head>
 <body>
-    <h2>Rock Paper Scissors</h2>
-    <h3>The Odin Project</h3>
 
-    <div>
-      <h4>Simple implementation of grade-school classic “rock paper scissors”. </h4>
-      <h4>Round of 5 wins”. </h4>
-      Write down your choice: <br>
-        Rock, Paper or Scissor <br>
-      <!-- <label for="textInput">: </label> -->
-      <input type="text" id="textInput" />
-      <button type="button" id="btn" onclick="game()">Result</button>
-      <button type="button" id="new" onClick="window.location.reload()">New Game</button>
-
-      <p>Result: <span id="result"></span></p>
-
-      <p>Computer: <span id="computer"></span></p>
-      <p>Player: <span id="player"></span></p>
-
-      <p>Final Result: <span id="finalResult"></span></p>
-
-      <hr />
+    <div class="titles">
+      <div class="title">Rock - Paper - Scissors</div>
+      <div class="title">"Round of 5 wins”</div>
+      <div class="title">Make your choice</div>
     </div>
 
-    <div>
+    <div class="choices">
+      <div class="choice" data-sound="rock"><img src="lib/rock.png" alt="Rock"></div>
+      <div class="choice" data-sound="paper"><img src="lib/paper.png" alt="Paper"></div>
+      <div class="choice" data-sound="scissor"><img src="lib/scissor.png" alt="Scissor"></div>
+    </div>
+
+    <div class="results">
+      <div>Result: <span id="result"></span></div>
+      <div>Computer: <span id="computer"></span></div>
+      <div>Player: <span id="player"></span></div>
+      <div>Final Result: <span id="finalResult"></span></div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-copyright">Copyright @</div>
+      <div class="footer-text">
+        <div class="footer-text1"><a href="#">The Odin Project</a></div>
+        <div class="footer-text1"><a href="#">Renato M. 2023</a></div>
+      </div>
+    </div>
+
 </body>
 </html>
